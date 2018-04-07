@@ -139,7 +139,9 @@ map <leader>l :set list!<CR> " Toggle tabs and EOL
 syntax on
 set t_Co=256
 set cursorline
-colorscheme civic
+colorscheme Civic
+" colorscheme Tomorrow-Night-Eighties
+" colorscheme onehalfdark
 let g:airline_theme='onehalfdark'
 " Color scheme (terminal)
 " put https://raw.github.com/altercation/vim-colors-solarized/master/colors/solarized.vim
