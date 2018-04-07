@@ -139,8 +139,8 @@ map <leader>l :set list!<CR> " Toggle tabs and EOL
 syntax on
 set t_Co=256
 set cursorline
-colorscheme Civic
-" colorscheme Tomorrow-Night-Eighties
+" colorscheme Civic
+colorscheme Tomorrow-Night-Eighties
 " colorscheme onehalfdark
 let g:airline_theme='onehalfdark'
 " Color scheme (terminal)

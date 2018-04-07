@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/Users/rohinbhasin/Projects'
 let g:netrw_dirhist_2='/Users/rohinbhasin/Projects/.vscode'
 let g:netrw_dirhist_3='/Users/rohinbhasin/Projects/c++/CS225/mp2'
+let g:netrw_dirhist_4='/Users/rohinbhasin/Projects/c++/POTD/potd-q44'
