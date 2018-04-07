@@ -11,17 +11,7 @@ Plugin 'scroolose/nerdcommenter'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-airline'
 Plugin 'sonph/onehalf', {'rtp': 'vim/'}
-Plugin 'NLKNguyen/papercolor-theme'
-Plugin 'nightsense/carbonized'
-Plugin 'kristijanhusak/vim-hybrid-material'
-Plugin 'dracula/vim'
-Plugin 'morhetz/gruvbox'
-Plugin 'solarized'
-Plugin 'jacoborus/tender.vim'
-Plugin 'zenburn'
-Plugin 'rakr/vim-one'
 Plugin 'octol/vim-cpp-enhanced-highlight'
-Plugin 'badwolf'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -149,7 +139,7 @@ map <leader>l :set list!<CR> " Toggle tabs and EOL
 syntax on
 set t_Co=256
 set cursorline
-colorscheme onehalfdark
+colorscheme civic
 let g:airline_theme='onehalfdark'
 " Color scheme (terminal)
 " put https://raw.github.com/altercation/vim-colors-solarized/master/colors/solarized.vim
