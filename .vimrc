@@ -12,6 +12,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-airline'
 Plugin 'sonph/onehalf', {'rtp': 'vim/'}
 Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'zxqfl/tabnine-vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -43,7 +44,6 @@ filetype plugin indent on
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 " TODO: Pick a leader key
 let mapleader = "."
-
 " Security
 set modelines=0
 
@@ -107,6 +107,10 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <CR> G
+:map <F8> :noremap j 5j <CR>
+" :map <S-F8> :noremap j j <CR>
+:map <F8> :noremap k 5k <CR>
+" :map <S-F8> :noremap k k <CR>
 set splitbelow
 set splitright
 set hlsearch
@@ -130,6 +134,8 @@ endif
 
 :inoremap { {}<Esc>i
 :inoremap [ []<Esc>i
+":inoremap ( ()<Esc>i
+":inoremap " ""<Esc>i
 " Visualize tabs and newlines
 set listchars=tab:▸\ ,eol:¬
 " Uncomment this to enable by default:
