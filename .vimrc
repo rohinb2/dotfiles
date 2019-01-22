@@ -13,6 +13,8 @@ Plugin 'vim-airline'
 Plugin 'sonph/onehalf', {'rtp': 'vim/'}
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'zxqfl/tabnine-vim'
+Plugin 'drewtempelmeyer/palenight.vim'
+Plugin 'ayu-theme/ayu-vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -133,7 +135,7 @@ if (has("termguicolors"))
 endif
 
 :inoremap { {}<Esc>i
-:inoremap [ []<Esc>i
+":inoremap [ []<Esc>i
 ":inoremap ( ()<Esc>i
 ":inoremap " ""<Esc>i
 " Visualize tabs and newlines
@@ -146,7 +148,9 @@ syntax on
 set t_Co=256
 set cursorline
 " colorscheme Civic
-colorscheme Tomorrow-Night-Eighties
+"colorscheme Tomorrow-Night-Eighties
+set background=dark
+colorscheme palenight
 " colorscheme onehalfdark
 let g:airline_theme='onehalfdark'
 " Color scheme (terminal)
