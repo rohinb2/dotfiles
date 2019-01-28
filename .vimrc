@@ -7,7 +7,7 @@ call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'scroolose/nerdcommenter'
+Plugin 'scrooloose/nerdcommenter'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-airline'
 Plugin 'sonph/onehalf', {'rtp': 'vim/'}
