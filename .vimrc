@@ -15,6 +15,7 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'zxqfl/tabnine-vim'
 Plugin 'drewtempelmeyer/palenight.vim'
 Plugin 'ayu-theme/ayu-vim'
+Plugin 'morhetz/gruvbox'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -40,6 +41,10 @@ filetype off
 
 " Turn on syntax highlighting
 syntax on
+
+" turn relative line numbers on
+:set relativenumber
+:set rnu
 
 " For plugins to load correctly
 filetype plugin indent on
@@ -149,8 +154,10 @@ set t_Co=256
 set cursorline
 " colorscheme Civic
 "colorscheme Tomorrow-Night-Eighties
-set background=dark
+"set background=dark
 colorscheme palenight
+"colorscheme gruvbox
+set bg=dark
 " colorscheme onehalfdark
 let g:airline_theme='onehalfdark'
 " Color scheme (terminal)
