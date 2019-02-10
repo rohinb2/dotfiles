@@ -85,6 +85,7 @@ runtime! macros/matchit.vim
 " Move up/down editor lines
 nnoremap j gj
 nnoremap k gk
+inoremap ` <Esc>
 
 " Custom c++ highlighting
 let g:cpp_class_scope_highlight = 1
@@ -156,7 +157,7 @@ set cursorline
 "colorscheme Tomorrow-Night-Eighties
 "set background=dark
 colorscheme palenight
-"colorscheme gruvbox
+" colorscheme gruvbox
 set bg=dark
 " colorscheme onehalfdark
 let g:airline_theme='onehalfdark'
