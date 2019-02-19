@@ -33,6 +33,7 @@ filetype plugin indent on    " required
 
 " Don't try to be vi compatible
 set nocompatible
+set wrap
 
 " Helps force plugins to load correctly when it is turned back on below
 filetype off
@@ -83,8 +84,6 @@ set matchpairs+=<:> " use % to jump between pairs
 runtime! macros/matchit.vim
 
 " Move up/down editor lines
-nnoremap j gj
-nnoremap k gk
 inoremap ` <Esc>
 
 " Custom c++ highlighting
@@ -115,9 +114,9 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <CR> G
-:map <F8> :noremap j 5j <CR>
+:map <F8> :noremap j 2j <CR>
 " :map <S-F8> :noremap j j <CR>
-:map <F8> :noremap k 5k <CR>
+:map <F7> :noremap k 2k <CR>
 " :map <S-F8> :noremap k k <CR>
 set splitbelow
 set splitright
