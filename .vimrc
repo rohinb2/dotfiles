@@ -12,7 +12,8 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-airline'
 Plugin 'sonph/onehalf', {'rtp': 'vim/'}
 Plugin 'octol/vim-cpp-enhanced-highlight'
-Plugin 'zxqfl/tabnine-vim'
+Plugin 'kien/ctrlp.vim'
+" Plugin 'zxqfl/tabnine-vim'
 Plugin 'drewtempelmeyer/palenight.vim'
 Plugin 'ayu-theme/ayu-vim'
 Plugin 'morhetz/gruvbox'
@@ -84,7 +85,8 @@ set matchpairs+=<:> " use % to jump between pairs
 runtime! macros/matchit.vim
 
 " Move up/down editor lines
-inoremap ` <Esc>
+inoremap jk <Esc>
+inoremap <Esc> <nop>
 
 " Custom c++ highlighting
 let g:cpp_class_scope_highlight = 1
@@ -114,9 +116,7 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <CR> G
-:map <F8> :noremap j 2j <CR>
 " :map <S-F8> :noremap j j <CR>
-:map <F7> :noremap k 2k <CR>
 " :map <S-F8> :noremap k k <CR>
 set splitbelow
 set splitright
