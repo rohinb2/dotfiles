@@ -8,15 +8,18 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'vim-airline'
-Plugin 'sonph/onehalf', {'rtp': 'vim/'}
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'kien/ctrlp.vim'
 " Plugin 'zxqfl/tabnine-vim'
+
+" Color theme plugins 
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'vim-airline'
 Plugin 'drewtempelmeyer/palenight.vim'
-Plugin 'ayu-theme/ayu-vim'
-Plugin 'morhetz/gruvbox'
+Plugin 'sonph/onehalf', {'rtp': 'vim/'}
+" Plugin 'ayu-theme/ayu-vim'
+" Plugin 'morhetz/gruvbox'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -51,7 +54,8 @@ syntax on
 " For plugins to load correctly
 filetype plugin indent on
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-" TODO: Pick a leader key
+" Leader key for batch commenting on nerdcommenter. .cc will now comment
+" a block. .c/ will toggle 
 let mapleader = "."
 " Security
 set modelines=0
@@ -84,9 +88,10 @@ set backspace=indent,eol,start
 set matchpairs+=<:> " use % to jump between pairs
 runtime! macros/matchit.vim
 
-" Move up/down editor lines
+" Have jk map to escape for quick exiting 
 inoremap jk <Esc>
-inoremap <Esc> <nop>
+
+" Move up/down editor lines
 
 " Custom c++ highlighting
 let g:cpp_class_scope_highlight = 1
@@ -131,6 +136,10 @@ map <leader><space> :let @/=''<cr> " clear search
 " "nnoremap <F1> :set invfullscreen<CR>
 " "vnoremap <F1> :set invfullscreen<CR>
 
+" Ctrl P stuff
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
 " Textmate holdouts
 
 " Formatting
@@ -139,10 +148,12 @@ if (has("termguicolors"))
  set termguicolors
 endif
 
+" Autocompleting for braces
 :inoremap { {}<Esc>i
 ":inoremap [ []<Esc>i
 ":inoremap ( ()<Esc>i
 ":inoremap " ""<Esc>i
+
 " Visualize tabs and newlines
 set listchars=tab:▸\ ,eol:¬
 " Uncomment this to enable by default:
@@ -152,15 +163,12 @@ map <leader>l :set list!<CR> " Toggle tabs and EOL
 syntax on
 set t_Co=256
 set cursorline
+
 " colorscheme Civic
 "colorscheme Tomorrow-Night-Eighties
-"set background=dark
 colorscheme palenight
 " colorscheme gruvbox
 set bg=dark
 " colorscheme onehalfdark
 let g:airline_theme='onehalfdark'
-" Color scheme (terminal)
-" put https://raw.github.com/altercation/vim-colors-solarized/master/colors/solarized.vim
-" in ~/.vim/colors/ and uncomment:
 " colorscheme solarized
