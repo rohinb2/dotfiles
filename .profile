@@ -12,7 +12,8 @@ alias ...........="cd ../../../../../../../../../.."
 alias ............="cd ../../../../../../../../../../.."
 alias devserver="ssh rohinb2@devvm4259.frc0.facebook.com"
 alias ksudo="kubectl --as $USER --as-group ctrl-privileged"
-ICLOUD="~/Library/Mobile Documents/com~apple~CloudDocs/"
+alias fixbrew="sudo chown -R $(whoami) /usr/local/bin /usr/local/lib /usr/local/sbin /usr/local/share/zsh /usr/local/share/zsh/site-functions"
+ICLOUD="/Users/rohinb2/Library/Mobile Documents/com~apple~CloudDocs"
 GDRIVE="/Volumes/GoogleDrive/My Drive/"
 
 mkdir -p ~/.logs/
