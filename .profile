@@ -10,6 +10,7 @@ alias .........="cd ../../../../../../../.."
 alias ..........="cd ../../../../../../../../.."
 alias ...........="cd ../../../../../../../../../.."
 alias ............="cd ../../../../../../../../../../.."
+alias devserver="ssh rohinb2@devvm4259.frc0.facebook.com"
 ICLOUD="~/Library/Mobile Documents/com~apple~CloudDocs/"
 GDRIVE="/Volumes/GoogleDrive/My Drive/"
 
