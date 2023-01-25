@@ -48,8 +48,8 @@ filetype off
 syntax on
 
 " turn relative line numbers on
-:set relativenumber
-:set rnu
+" :set relativenumber
+" :set rnu
 
 " For plugins to load correctly
 filetype plugin indent on
