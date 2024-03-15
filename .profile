@@ -69,4 +69,4 @@ dssh() {
 #########################
 export AWS_PROFILE=oss
 alias work="conda activate rh-env && cd ~/work"
-alias workrepo="conda activate rh-env && cd ~/work/runhouse"
+alias rh="conda activate rh-env && cd ~/work/runhouse"
