@@ -48,7 +48,7 @@ hist() {
 }
 
 fhgrep() {
-    hist | grep $1
+    fullhistory | grep $1
 }
 
 
@@ -59,6 +59,10 @@ gplrb() {
 
 prune() {
     find . -maxdepth 1 -type f -empty -delete
+}
+
+dka() {
+    docker kill $(docker ps -q)
 }
 
 #########################
@@ -79,4 +83,10 @@ alias benchmarking="conda activate rh-env && cd ~/work/internal-tools/benchmarki
 dssh() {
     docker exec -itu rh-docker-user $1 /bin/bash
 }
+
+alias pushall="pre-commit run -a; git add -A && gt modify && gt submit"
+
+
+# export SKYPILOT_DOCKER_USERNAME=AWS
+# export SKYPILOT_DOCKER_SERVER=172657097474.dkr.ecr.us-east-1.amazonaws.com
 
