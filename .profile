@@ -85,6 +85,7 @@ dssh() {
 }
 
 alias pushall="pre-commit run -a; git add -A && gt modify && gt submit"
+export PYTHONPATH=$PYTHONPATH:/Users/rohinbhasin/work/runhouse-den
 
 
 # export SKYPILOT_DOCKER_USERNAME=AWS
