@@ -12,9 +12,9 @@ alias ...........="cd ../../../../../../../../../.."
 alias ............="cd ../../../../../../../../../../.."
 
 alias fixbrew="sudo chown -R $(whoami) /usr/local/bin /usr/local/lib /usr/local/sbin /usr/local/share/zsh /usr/local/share/zsh/site-functions"
-ICLOUD="/Users/rohinbhasin/Library/Mobile Documents/com~apple~CloudDocs"
+ICLOUD="/$HOME/Library/Mobile Documents/com~apple~CloudDocs"
 GDRIVE="/Volumes/GoogleDrive/My Drive/"
-SCRIPTS="/Users/rohinbhasin/Library/Mobile Documents/com~apple~CloudDocs/Documents/Scripts"
+SCRIPTS="/$HOME/Library/Mobile Documents/com~apple~CloudDocs/Documents/Scripts"
 
 mkdir -p ~/.logs/
 export PROMPT_COMMAND='if [ "$(id -u)" -ne 0 ]; then echo "$(date "+%Y-%m-%d.%H:%M:%S") $(history | tail -n 1)" >> ~/.logs/bash-history-${myhostname}-$(date "+%Y-%m-%d").log; fi'
@@ -75,17 +75,17 @@ dka() {
 #########################
 # Runhouse
 #########################
-export AWS_PROFILE=oss
-alias work="conda activate rh-env && cd ~/work"
-alias rh="conda activate rh-env && cd ~/work/runhouse"
-alias mine="conda activate rh-env && cd ~/work/mine"
-alias benchmarking="conda activate rh-env && cd ~/work/internal-tools/benchmarking"
-dssh() {
-    docker exec -itu rh-docker-user $1 /bin/bash
-}
+#export AWS_PROFILE=oss
+#alias work="conda activate rh-env && cd ~/work"
+#alias rh="conda activate rh-env && cd ~/work/runhouse"
+#alias mine="conda activate rh-env && cd ~/work/mine"
+#alias benchmarking="conda activate rh-env && cd ~/work/internal-tools/benchmarking"
+#dssh() {
+    #docker exec -itu rh-docker-user $1 /bin/bash
+#}
 
-alias pushall="pre-commit run -a; git add -A && gt modify && gt submit"
-export PYTHONPATH=$PYTHONPATH:/Users/rohinbhasin/work/runhouse-den
+#alias pushall="pre-commit run -a; git add -A && gt modify && gt submit"
+#export PYTHONPATH=$PYTHONPATH:/Users/rohinbhasin/work/runhouse-den
 
 
 # export SKYPILOT_DOCKER_USERNAME=AWS
